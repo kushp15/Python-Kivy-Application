@@ -9,7 +9,7 @@ import pymysql.connections
     with help of location and asset number
     '''
 
-class Add_Update_901(Screen):
+class Add_Update(Screen):
     def pop_add(self):
         layout = GridLayout(cols=1, padding=2)
         popuplabel = Label(text="Invalid Number\n"
@@ -195,7 +195,7 @@ class Add_Update_901(Screen):
                             "c9 = '%s', "
                             "c10= '%s', "
                             "c11= '%s'"
-                            " WHERE asset = '%s' " % (
+                            " WHERE c2 = '%s' " % (
                                 c, d, e, f, g, h, j, k, a))
                         self.pop_update()
                     elif (date != i):
